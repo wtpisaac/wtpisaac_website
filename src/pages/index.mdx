@@ -3,11 +3,14 @@
 ---
 
 import { Image } from 'astro:assets'
+import HCenter from '../components/HCenter.astro'
 import imageOfIsaac from '../images/isaac_pfp.jpg'
 
 _anti-bot email: [my username] @ gmail [common tld here]_
 
-<Image src={imageOfIsaac} alt="it's me :)" height="300" width="300" />
+<HCenter>
+  <Image src={imageOfIsaac} alt="it's me :)" height="300" width="300" />
+</HCenter>
 
 Software developer and FOSS enthusiast in San Diego, CA, USA. he/him.
 
