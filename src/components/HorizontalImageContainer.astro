@@ -1,0 +1,16 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+    images: ImageMetadata[];
+    
+}
+
+const maxHeight = Astro.props.images.reduce((acc, elem) => Math.max(acc, elem.height), 0);
+---
+
+<div id="image-container">
+    {Astro.props.images.forEach((imageMetadata) => {
+        <Image src={imageMetadata} />
+    })}
+</div>
